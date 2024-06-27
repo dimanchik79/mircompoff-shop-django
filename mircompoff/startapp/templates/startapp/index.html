@@ -1,0 +1,43 @@
+{% extends 'startapp/base.html' %}
+{% load static %}
+
+{% block title%}
+Интернет-магазин МИРКОМПOFF
+{% endblock %}
+
+<!-- Блок header ------------------------------------------------------------------------------------------------------>
+{% block header %}
+{% include "startapp/header.html" %}
+{% endblock %}
+
+{% block navigation %}
+<div class="header-nav">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-start align-items-center py-1 h6">
+                <a href="#">Главная</a>
+            </div>
+            {% include "startapp/cart_favorites.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+<!-- Блок body -------------------------------------------------------------------------------------------------------->
+{% block body %}
+<div class="container">
+    <div class="row my-3">
+        <div class="col">
+            <h3>
+                ГОРЯЧИЕ СКИДКИ <span class="badge bg-danger">Hot</span>
+            </h3>
+        </div>
+    </div>
+{% endblock %}
+
+
+<!-- Блок footer ------------------------------------------------------------------------------------------------------>
+{% block footer %}
+{% include 'startapp/footer.html' %}
+{% endblock %}

@@ -1,0 +1,89 @@
+{% load static %}
+
+<div class="header-nav">
+    <div class="container-fluid py-1">
+        <div class="row d-flex justify-content-between">
+            <div class="col-4 d-flex align-items-center">
+                <img id="phone" src="{% static 'startapp/img/phone.png' %}" alt="phone" width="20" height="20">
+                <a href="tel:+780000000" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-2">+7-800-000-00</a>
+            </div>
+            <div class="header__social-main col-4 d-flex align-items-center">
+                <div class="header__social">
+                <div class="icons">
+                    <a href="#">
+                        <img id= "youtube" src="{% static 'startapp/img/yo.png' %}" alt="phone" width="25" height="25">
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <img id="telegram" src="{% static 'startapp/img/tg.png' %}" alt="phone" width="25" height="25">
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <img id="ok" src="{% static 'startapp/img/ok.png' %}" alt="phone" width="25" height="25">
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+                {% include "startapp/auth.html" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg header-nav border-nav" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'startapp/img/logo.png' %}" alt="Logo" width="200" height="50">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 h5 px-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Категории товаров
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Компьютеры</a></li>
+                      <li><a class="dropdown-item" href="#">Ноутбуки</a></li>
+                      <li><a class="dropdown-item" href="#">Видеокарты</a></li>
+                      <li><a class="dropdown-item" href="#">Материнские платы</a></li>
+                      <li><a class="dropdown-item" href="#">HDD/SSD</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Весь каталог</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+                        <img id="" src="{% static 'startapp/img/heart.png' %}" alt="phone" width="25" height="25">
+                        Избранное
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img id= "" src="{% static 'startapp/img/cart.png' %}" alt="phone" width="30" height="30"> 
+                        Корзина
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
