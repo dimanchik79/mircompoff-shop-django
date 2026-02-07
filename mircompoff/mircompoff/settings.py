@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'mircompoff.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mircompoff',
-        'USER': 'postgres',
-        'PASSWORD': 'qwerty',
+        'NAME': 'app_db',
+        'USER': 'admin',
+        'PASSWORD': 'secret',
         'HOST': 'localhost'
     }
 }
